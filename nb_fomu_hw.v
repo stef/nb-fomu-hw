@@ -37,8 +37,8 @@ module nb_fomu_hw (
             reset_cnt <= reset_cnt + reset;
 
     // uart pipeline in
-    reg  [7:0] uart_in_data;
-    reg  uart_in_valid;
+    wire [7:0] uart_in_data;
+    wire uart_in_valid;
     wire uart_in_ready;
     wire [7:0] uart_out_data;
     wire uart_out_valid;
